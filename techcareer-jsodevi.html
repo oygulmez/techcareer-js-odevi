@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techcareer.net JS 1.Ödevi</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+//1.Soru "  Çağatay Yıldız" isimli metindeki boşlukları kaldır.    (REPLACE)
+
+let isim = "                      Çağatay Yıldız";
+sonuc = isim.trim();
+console.log(sonuc);
+
+//2.Soru ""cagatay yildiz" kelimesindeki boşlukları temizle ve tüm harfleri büyült"
+
+let isim1 = "çağatay yıldız"
+sonuc1 = isim1.trim().toLocaleUpperCase();
+console.log(sonuc1);
+
+//3. Soru "******Çağatay Yıldız" isimli metindeki yıldızları kaldır (REPLACE)
+
+let isim2 = "******Çağatay Yıldız";
+sonuc2 = isim2.replace(/\*/g, '');
+console.log(sonuc2);
+
+//4.Soru "Çağatay  Yıldız" metnindeki kelimeler arasında 2 boşluk var bunu bir boşluk yap (REPLACE)
+
+var isim3 = "Çağatay  Yıldız";
+sonuc3 = isim3.replace(/\  /g, ' ')
+console.log(sonuc3);
+
+//5.Soru "**Tech Career**" isimli metindeki yıldızları kaldır
+
+var isim4 = "**Tech Career**";
+sonuc4 = isim4.replace(/\*/g, '');
+console.log(sonuc4);
+
+//6.Soru "Tech Career" isimli metnin soluna ve sağına 3 yıldız koy. "***Tech Career***" ( Normal toplama operatörü)
+
+var isim5 = "Tech Career"
+var ek = "***"
+console.log(ek + isim5 + ek)
+
+//7.Soru "Tech Career Bilişim teknolojileri" metnindeki son kelimeyi büyült (SUBSTRING)
+
+var isim6 = "Tech Career Bilişim teknolojileri";
+sonuc7 = isim6.substring(20).toLocaleUpperCase();
+console.log(sonuc7)
+
+//8.Soru "Tech bilişim" kelimelerin ilk harflerini büyült (Substring ve upper)
+
+var isim7 = "tech bilişim"
+sonuc8 = isim7.substring(-1,1).toUpperCase() + isim7.substring(1,5) + isim7.substring(5,6).toUpperCase() + isim7.substring(6);
+console.log(sonuc8);
+
+</script>
+
+</html>
